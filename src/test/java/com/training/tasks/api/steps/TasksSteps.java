@@ -42,7 +42,7 @@ public class TasksSteps {
 
     @When("the client makes a GET request")
     public void the_client_makes_a_GET_request() {
-        Response response = given()
+        response = given()
                 .contentType(ContentType.JSON)
                 .when()
                 .get("/tasks/" + createdTaskId)
